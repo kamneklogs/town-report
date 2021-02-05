@@ -42,26 +42,14 @@ namespace Tarea1
                     {
                         temp = s.Split(',');
 
-
                         index = dataTownGridRecord.Rows.Add();
                         dataTownGridRecord.Rows[index].Cells[0].Value = temp[0];
                         dataTownGridRecord.Rows[index].Cells[1].Value = temp[1];
                         dataTownGridRecord.Rows[index].Cells[2].Value = temp[2];
                         dataTownGridRecord.Rows[index].Cells[3].Value = temp[3];
                         dataTownGridRecord.Rows[index].Cells[4].Value = temp[4];
-
-
-
-
-
-
                         s = sr.ReadLine();
                     }
-
-
-
-
-
 
                 }
                 catch (SecurityException ex)
@@ -69,8 +57,12 @@ namespace Tarea1
                     MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
                     $"Details:\n\n{ex.StackTrace}");
                 }
+                catch(IndexOutOfRangeException ex)
+                {
+                    MessageBox.Show($"\n\nError message: {ex.Message}\n\n" +
+                   $"Details:\n\n{ex.StackTrace}");
+                }
             }
-
 
         }
 
