@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Security;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Tarea1
@@ -30,21 +23,22 @@ namespace Tarea1
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
+                int index = 0;
+
                 try
                 {
                     var sr = new StreamReader(openFileDialog.FileName);
 
                     string s = sr.ReadLine();
                     s = sr.ReadLine();
-                    int index = 0;
                     string[] temp = null;
                     while (s != null)
                     {
                         temp = s.Split(',');
 
                         index = dataTownGridRecord.Rows.Add();
-                        dataTownGridRecord.Rows[index].Cells[0].Value = temp[0];
-                        dataTownGridRecord.Rows[index].Cells[1].Value = temp[1];
+                        dataTownGridRecord.Rows[index].Cells[0].Value = int.Parse(temp[0]);
+                        dataTownGridRecord.Rows[index].Cells[1].Value = int.Parse(temp[1]);
                         dataTownGridRecord.Rows[index].Cells[2].Value = temp[2];
                         dataTownGridRecord.Rows[index].Cells[3].Value = temp[3];
                         dataTownGridRecord.Rows[index].Cells[4].Value = temp[4];
@@ -62,6 +56,10 @@ namespace Tarea1
                     MessageBox.Show($"\n\nError message: {ex.Message}\n\n" +
                    $"Details:\n\n{ex.StackTrace}");
                 }
+                catch(FormatException)
+                {
+                    dataTownGridRecord.Rows.RemoveAt(index);
+                }
             }
 
         }
@@ -71,6 +69,45 @@ namespace Tarea1
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+    
 
+            int bottom = int.Parse(textBox1.Text);
+
+            int top = int.Parse(textBox2.Text);
+
+            int veces = dataTownGridRecord.Rows.Count;
+            for (int i = 0; i < dataTownGridRecord.Rows.Count; i++)
+            {
+                int value = (int)dataTownGridRecord.Rows[i].Cells[1].Value;
+                if (value> top)
+                {
+                    dataTownGridRecord.Rows.RemoveAt(i);
+                        i--;
+
+
+                }
+
+
+            }
+            for (int i = 0; i < dataTownGridRecord.Rows.Count; i++)
+            {
+                int value = (int)dataTownGridRecord.Rows[i].Cells[1].Value;
+                if (value < bottom)
+                {
+                   
+                    dataTownGridRecord.Rows.RemoveAt(i);
+                    i--;
+                
+
+                }
+
+
+            }
+
+
+
+        }
     }
 }
