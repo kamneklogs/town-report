@@ -8,3 +8,4 @@ C:\Users\Camilo\source\repos\Tarea1\Tarea1\obj\Debug\Tarea1.csproj.GenerateResou
 C:\Users\Camilo\source\repos\Tarea1\Tarea1\obj\Debug\Tarea1.csproj.CoreCompileInputs.cache
 C:\Users\Camilo\source\repos\Tarea1\Tarea1\obj\Debug\Tarea1.exe
 C:\Users\Camilo\source\repos\Tarea1\Tarea1\obj\Debug\Tarea1.pdb
+C:\Users\Camilo\source\repos\Tarea1\Tarea1\obj\Debug\Tarea1.StatForm.resources

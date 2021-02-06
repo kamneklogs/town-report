@@ -66,7 +66,8 @@ namespace Tarea1
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            StatForm newWindow = new StatForm(dataTownGridRecord.Rows);
+            newWindow.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -77,11 +78,10 @@ namespace Tarea1
 
             int top = int.Parse(textBox2.Text);
 
-            int veces = dataTownGridRecord.Rows.Count;
             for (int i = 0; i < dataTownGridRecord.Rows.Count; i++)
             {
                 int value = (int)dataTownGridRecord.Rows[i].Cells[1].Value;
-                if (value> top)
+                if ((value> top)||(value < bottom))
                 {
                     dataTownGridRecord.Rows.RemoveAt(i);
                         i--;
@@ -91,23 +91,7 @@ namespace Tarea1
 
 
             }
-            for (int i = 0; i < dataTownGridRecord.Rows.Count; i++)
-            {
-                int value = (int)dataTownGridRecord.Rows[i].Cells[1].Value;
-                if (value < bottom)
-                {
-                   
-                    dataTownGridRecord.Rows.RemoveAt(i);
-                    i--;
-                
-
-                }
-
-
-            }
-
-
-
+         
         }
     }
 }
