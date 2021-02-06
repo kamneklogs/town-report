@@ -21,8 +21,6 @@ namespace Tarea1
         {
             InitializeComponent();
 
-            btnButton.Text = "funciona";
-
             this.rows = rows;
 
             double total = rows.Count;

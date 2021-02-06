@@ -29,10 +29,11 @@ namespace Tarea1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatForm));
             this.chartTown = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartTown)).BeginInit();
@@ -40,37 +41,37 @@ namespace Tarea1
             // 
             // chartTown
             // 
-            chartArea1.Area3DStyle.Enable3D = true;
-            chartArea1.Name = "ChartArea1";
-            this.chartTown.ChartAreas.Add(chartArea1);
+            chartArea2.Area3DStyle.Enable3D = true;
+            chartArea2.Name = "ChartArea1";
+            this.chartTown.ChartAreas.Add(chartArea2);
             this.chartTown.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            legend1.Title = "Clasificacion";
-            legend1.TitleAlignment = System.Drawing.StringAlignment.Near;
-            this.chartTown.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            legend2.Title = "Clasificacion";
+            legend2.TitleAlignment = System.Drawing.StringAlignment.Near;
+            this.chartTown.Legends.Add(legend2);
             this.chartTown.Location = new System.Drawing.Point(0, 0);
             this.chartTown.Name = "chartTown";
             this.chartTown.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.IsValueShownAsLabel = true;
-            series1.LabelFormat = " ";
-            series1.Legend = "Legend1";
-            series1.MarkerSize = 0;
-            series1.Name = "TownType";
-            series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
-            series1.YValuesPerPoint = 4;
-            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            this.chartTown.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.IsValueShownAsLabel = true;
+            series2.LabelFormat = " ";
+            series2.Legend = "Legend1";
+            series2.MarkerSize = 0;
+            series2.Name = "TownType";
+            series2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
+            series2.YValuesPerPoint = 4;
+            series2.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            this.chartTown.Series.Add(series2);
             this.chartTown.Size = new System.Drawing.Size(474, 420);
             this.chartTown.TabIndex = 0;
             this.chartTown.Text = "Tipo";
-            title1.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            title1.Name = "Title1";
-            title1.Text = "Tipos";
-            this.chartTown.Titles.Add(title1);
+            title2.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            title2.Name = "Title1";
+            title2.Text = "Tipos";
+            this.chartTown.Titles.Add(title2);
             // 
             // btnButton
             // 
@@ -89,8 +90,9 @@ namespace Tarea1
             this.ClientSize = new System.Drawing.Size(474, 420);
             this.Controls.Add(this.btnButton);
             this.Controls.Add(this.chartTown);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StatForm";
-            this.Text = "StatForm";
+            this.Text = "Municipios";
             ((System.ComponentModel.ISupportInitialize)(this.chartTown)).EndInit();
             this.ResumeLayout(false);
 
