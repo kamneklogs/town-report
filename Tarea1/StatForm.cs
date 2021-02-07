@@ -52,10 +52,10 @@ namespace Tarea1
             islaCount /= total;
             noMunicipioCount /= total;
 
-            chartTown.Series["TownType"].Points.AddXY("Municipio",municipioCount);
-            chartTown.Series["TownType"].Points.AddXY("Area No Municipalizada",noMunicipioCount);
-            chartTown.Series["TownType"].Points.AddXY("Sin Valor",1.0-municipioCount-islaCount-noMunicipioCount);
-            chartTown.Series["TownType"].Points.AddXY("Isla",islaCount);
+            chartTown.Series["TownType"].Points.AddXY("MUNICIPIO",municipioCount);
+            chartTown.Series["TownType"].Points.AddXY("ÁREA NO MUNICIPALIZADA",noMunicipioCount);
+            chartTown.Series["TownType"].Points.AddXY("SIN VALOR",1.0-municipioCount-islaCount-noMunicipioCount);
+            chartTown.Series["TownType"].Points.AddXY("ISLA",islaCount);
 
         }
 
