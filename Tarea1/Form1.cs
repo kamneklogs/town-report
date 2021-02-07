@@ -24,7 +24,7 @@ namespace Tarea1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Nota: debes escoger un archivo csv (FORMATO: VALUE, VALUE, VALUE, VALUE, VALUE)");
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {

@@ -9,3 +9,14 @@ C:\Users\Camilo\source\repos\Tarea1\Tarea1\obj\Debug\Tarea1.csproj.CoreCompileIn
 C:\Users\Camilo\source\repos\Tarea1\Tarea1\obj\Debug\Tarea1.exe
 C:\Users\Camilo\source\repos\Tarea1\Tarea1\obj\Debug\Tarea1.pdb
 C:\Users\Camilo\source\repos\Tarea1\Tarea1\obj\Debug\Tarea1.StatForm.resources
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\bin\Debug\Tarea1.exe.config
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\bin\Debug\Tarea1.exe
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\bin\Debug\Tarea1.pdb
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\obj\Debug\Tarea1.csprojAssemblyReference.cache
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\obj\Debug\Tarea1.Form1.resources
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\obj\Debug\Tarea1.Properties.Resources.resources
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\obj\Debug\Tarea1.StatForm.resources
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\obj\Debug\Tarea1.csproj.GenerateResource.cache
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\obj\Debug\Tarea1.csproj.CoreCompileInputs.cache
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\obj\Debug\Tarea1.exe
+C:\Users\Andrea Núñez\Documents\Proyectos\town-report\Tarea1\obj\Debug\Tarea1.pdb
